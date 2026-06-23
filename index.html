@@ -131,10 +131,10 @@
 
         <div class="photo-box">
             <div class="photo-container">
-                <img src="kho hậu cần.jpg" onerror="this.src='https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80'; this.style.opacity='0.4';" alt="Không gian kho hậu cần thực tế">
+                <img src="kho hậu cần.jpg" onerror="this.src='https://drive.google.com/file/d/1RnKbcy_IbFhy6TYajSQVXh-1dFvnlwKV/view?usp=sharing'; this.style.opacity='0.4';" alt="Không gian kho hậu cần thực tế">
             </div>
             <div class="photo-caption">
-                <i class="fas fa-camera"></i> Hình ảnh thực tế sắp xếp vật chất tại gian kho hậu cần chuyên ngành
+                <i class="fas fa-camera"></i> Hình ảnh thực tế sắp xếp vật chất tại gian kho hậu cần
             </div>
         </div>
 
@@ -166,7 +166,7 @@
                     <input type="text" id="pName" class="form-control" placeholder="Tên vật chất hậu cần...">
                 </div>
                 <div class="col-md-3 mb-3">
-                    <input type="text" id="pYear" class="form-control" placeholder="Năm sản xuất, cấp (VD: 2023)">
+                    <input type="text" id="pYear" class="form-control" placeholder="Năm Cấp (VD: 2023)">
                 </div>
                 <div class="col-md-3 mb-3">
                     <input type="number" id="pQty" class="form-control" placeholder="Số lượng thực tế">
@@ -197,7 +197,7 @@
                         <tr>
                             <th style="width: 8%">TT</th>
                             <th>Tên Vật Chất Nhập Kho</th>
-                            <th style="width: 25%">Năm Sản Xuất, Cấp</th>
+                            <th style="width: 25%">Năm Cấp</th>
                             <th style="width: 18%">Số Lượng</th>
                             <th style="width: 12%">Thao Tác</th>
                         </tr>
@@ -341,7 +341,7 @@
         const excelData = inventory.map((item, index) => ({
             'TT': index + 1,
             'TÊN VẬT CHẤT': item.name,
-            'NĂM SẢN XUẤT, CẤP': item.year,
+            'NĂM CẤP': item.year,
             'SỐ LƯỢNG': item.quantity
         }));
         const worksheet = XLSX.utils.json_to_sheet(excelData);
